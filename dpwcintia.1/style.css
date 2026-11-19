@@ -1,0 +1,425 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #182536;
+  background: #ffffff;
+  line-height: 1.7;
+}
+
+header {
+  background: #101c2b;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  max-width: 1150px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2, footer h2 {
+  letter-spacing: 1px;
+}
+
+.navbar h2 span, footer h2 span {
+  color: #66e4df;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #66e4df;
+}
+
+#menuBtn {
+  display: none;
+  color: white;
+  background: transparent;
+  border: 0;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 550px;
+  background: linear-gradient(120deg, #101c2b, #183e63);
+  color: white;
+  padding: 70px max(6%, calc((100% - 1150px) / 2));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+  overflow: hidden;
+}
+
+.hero-text {
+  max-width: 530px;
+}
+
+.label {
+  color: #078bba;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero .label {
+  color: #66e4df;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #66e4df;
+}
+
+.hero-text > p:not(.label) {
+  color: #d0dce8;
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-block;
+  background: #087cf0;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #0564c4;
+  transform: translateY(-2px);
+}
+
+.laptop {
+  width: 390px;
+  min-width: 280px;
+  filter: drop-shadow(0 25px 25px #0006);
+  transform: rotate(-4deg);
+}
+
+.screen {
+  height: 235px;
+  border: 9px solid #263746;
+  border-radius: 13px 13px 3px 3px;
+  background: linear-gradient(140deg, #1b3c66, #087cf0, #66e4df);
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+
+.screen-content small {
+  letter-spacing: 3px;
+}
+
+.screen-content h2 {
+  margin-top: 18px;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.base {
+  height: 17px;
+  width: 112%;
+  margin-left: -6%;
+  background: linear-gradient(#b8c4ce, #657481);
+  clip-path: polygon(6% 0, 94% 0, 100% 100%, 0 100%);
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 28px max(5%, calc((100% - 1100px) / 2));
+  box-shadow: 0 5px 25px #1825360d;
+}
+
+.highlights div {
+  border-right: 1px solid #e4e9ef;
+  padding-left: 10px;
+}
+
+.highlights h3 {
+  color: #087cf0;
+  font-size: 19px;
+}
+
+.highlights p {
+  font-size: 12px;
+  color: #687586;
+}
+
+.section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 85px 20px;
+}
+
+.section h2, .price h2 {
+  font-size: clamp(29px, 4vw, 42px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.section h2 span {
+  color: #087cf0;
+}
+
+.intro {
+  max-width: 680px;
+  color: #687586;
+  margin-bottom: 30px;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.spec-card {
+  border: 1px solid #e3e9ef;
+  padding: 23px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.spec-card:hover {
+  border-color: #087cf0;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px #1825360c;
+}
+
+.spec-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.spec-card p {
+  color: #687586;
+  font-size: 13px;
+}
+
+.note {
+  margin-top: 20px;
+  color: #687586;
+  font-size: 12px;
+}
+
+.note a {
+  color: #087cf0;
+}
+
+.alternate {
+  max-width: none;
+  background: #f4f7fa;
+  padding-left: max(20px, calc((100% - 1110px) / 2));
+  padding-right: max(20px, calc((100% - 1110px) / 2));
+}
+
+.use-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.use-grid article {
+  background: white;
+  border: 1px solid #e5eaf0;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.use-grid h3 {
+  margin-bottom: 8px;
+}
+
+.use-grid p {
+  color: #687586;
+  font-size: 13px;
+}
+
+.pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.pros, .cons {
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.pros {
+  background: #effbf5;
+  border: 1px solid #d2f0df;
+}
+
+.cons {
+  background: #fff6ef;
+  border: 1px solid #f4e2d3;
+}
+
+.pros h3 {
+  color: #087d50;
+}
+
+.cons h3 {
+  color: #b35c22;
+}
+
+.pros ul, .cons ul {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.pros li, .cons li {
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.price {
+  background: #101c2b;
+  color: white;
+  padding: 65px 20px;
+  text-align: center;
+}
+
+.price > p:not(.label) {
+  color: #c8d4df;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+footer {
+  background: #0b1420;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+footer p, footer small {
+  color: #aebdca;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 55px 25px;
+  }
+
+  .laptop {
+    width: 320px;
+  }
+
+  .spec-grid, .use-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlights {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #101c2b;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 55px 20px 45px;
+  }
+
+  .hero h1 {
+    font-size: 39px;
+  }
+
+  .laptop {
+    width: 300px;
+    min-width: 0;
+    max-width: 90%;
+  }
+
+  .screen {
+    height: 190px;
+  }
+
+  .highlights {
+    gap: 18px 10px;
+    padding: 22px 15px;
+  }
+
+  .highlights h3 {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 60px 18px;
+  }
+
+  .spec-grid, .use-grid, .pros-cons {
+    grid-template-columns: 1fr;
+  }
+
+  .pros, .cons {
+    padding: 23px;
+  }
+}

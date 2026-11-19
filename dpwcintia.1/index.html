@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axioo MyBook Hype 5 AMD X3</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #101c35;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #69d2ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #69d2ff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #101c35, #244d80);
+            color: white;
+            padding: 65px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        .hero-text p {
+            color: #d8e5f5;
+            margin-bottom: 25px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 430px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 15px;
+            background: white;
+        }
+
+        .button {
+            display: inline-block;
+            background: #69d2ff;
+            color: #101c35;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title h2 {
+            color: #16345d;
+            font-size: 29px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        .content {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #0000000c;
+        }
+
+        .card h3 {
+            color: #174a7e;
+            margin-bottom: 10px;
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 20px;
+        }
+
+        .spec-table th,
+        .spec-table td {
+            border: 1px solid #ddd;
+            padding: 13px;
+            text-align: left;
+        }
+
+        .spec-table th {
+            background: #16345d;
+            color: white;
+        }
+
+        .spec-table tr:nth-child(even) {
+            background: #eef3f9;
+        }
+
+        .price {
+            color: #087c56;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .notice {
+            margin-top: 20px;
+            background: #fff4d7;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .models .card {
+            border-top: 4px solid #69d2ff;
+        }
+
+        details {
+            background: white;
+            padding: 18px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #16345d;
+        }
+
+        footer {
+            background: #101c35;
+            color: white;
+            text-align: center;
+            padding: 30px 8%;
+        }
+
+        footer a {
+            color: #69d2ff;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 10px 5px 0;
+            }
+
+            .hero {
+                padding: 45px 6%;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+
+            .spec-table {
+                font-size: 13px;
+            }
+
+            .spec-table th,
+            .spec-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>AXIOO.INFO</h2>
+
+        <nav>
+            <a href="#tentang">Tentang</a>
+            <a href="#spesifikasi">Spesifikasi</a>
+            <a href="#kelebihan">Kelebihan</a>
+            <a href="#harga">Harga</a>
+            <a href="#model">Model Lain</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <p>KENALI LAPTOP PILIHANMU</p>
+
+                <h1>Axioo MyBook<br>Hype 5 AMD X3</h1>
+
+                <p>
+                    Laptop untuk menunjang kegiatan belajar, bekerja,
+                    membuat website, mengolah dokumen, dan menjalankan
+                    berbagai aktivitas digital sehari-hari.
+                </p>
+
+                <a href="#spesifikasi" class="button">
+                    Lihat Spesifikasi
+                </a>
+            </div>
+
+            <img
+                src="https://www.axiooworld.com/uploads/products/87033716-fd21-4a88-bfb1-1518e2b1abf5.jpg?fit=crop&h=736&s=7d0e810c853465338a04e99e5c76007d&w=414"
+                alt="Laptop Axioo MyBook Hype 5 AMD X3"
+            >
+        </section>
+
+        <section id="tentang">
+            <div class="content">
+                <div class="section-title">
+                    <h2>Tentang Laptop</h2>
+                    <p>Mengenal Axioo MyBook Hype 5 AMD X3</p>
+                </div>
+
+                <p>
+                    Axioo MyBook Hype 5 AMD X3 merupakan laptop yang dapat
+                    digunakan untuk mendukung produktivitas harian.
+                    Laptop ini dapat menjadi pilihan untuk mahasiswa,
+                    pelajar, pekerja kantoran, serta pengguna yang
+                    membutuhkan perangkat untuk mengetik, menjelajah
+                    internet, belajar pemrograman, dan membuat dokumen.
+                </p>
+
+                <br>
+
+                <p>
+                    Bagi mahasiswa Sistem Informasi, laptop dapat
+                    digunakan untuk belajar HTML, CSS, pemrograman dasar,
+                    mengoperasikan Visual Studio Code, mengelola database
+                    ringan, serta menyelesaikan tugas perkuliahan.
+                    Kemampuan sebenarnya bergantung pada konfigurasi
+                    perangkat dan kebutuhan aplikasi.
+                </p>
+            </div>
+        </section>
+
+        <section id="spesifikasi">
+            <div class="content">
+                <div class="section-title">
+                    <h2>Spesifikasi Laptop</h2>
+                    <p>Ringkasan komponen utama</p>
+                </div>
+
+                <table class="spec-table">
+                    <tr>
+                        <th>Komponen</th>
+                        <th>Keterangan</th>
+                    </tr>
+                    <tr>
+                        <td>Model</td>
+                        <td>Axioo MyBook Hype 5 AMD X3</td>
+                    </tr>
+                    <tr>
+                        <td>Prosesor</td>
+                        <td>AMD Ryzen 5 3500U</td>
+                    </tr>
+                    <tr>
+                        <td>Grafis</td>
+                        <td>AMD Radeon Vega 8 terintegrasi</td>
+                    </tr>
+                    <tr>
+                        <td>Layar</td>
+                        <td>Periksa ukuran dan resolusi sesuai varian</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>Periksa kapasitas bawaan dan dukungan upgrade</td>
+                    </tr>
+                    <tr>
+                        <td>Penyimpanan</td>
+                        <td>SSD; kapasitas bergantung konfigurasi</td>
+                    </tr>
+                    <tr>
+                        <td>Sistem Operasi</td>
+                        <td>Tergantung paket penjualan</td>
+                    </tr>
+                    <tr>
+                        <td>Kegunaan</td>
+                        <td>Kuliah, kerja, browsing, dan coding dasar</td>
+                    </tr>
+                </table>
+
+                <p class="notice">
+                    Catatan: spesifikasi dapat berbeda menurut varian.
+                    Cocokkan dengan halaman resmi Axioo dan kode produk
+                    pada unit yang kamu miliki sebelum menjadikan tabel
+                    ini sebagai acuan pembelian.
+                </p>
+            </div>
+        </section>
+
+        <section id="kelebihan">
+            <div class="content">
+                <div class="section-title">
+                    <h2>Kelebihan Laptop</h2>
+                    <p>Hal yang dapat menjadi pertimbangan</p>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <h3>01. Untuk Kuliah</h3>
+                        <p>
+                            Dapat mendukung kegiatan mengetik,
+                            presentasi, mengerjakan tugas, dan belajar
+                            secara online.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>02. Belajar Coding</h3>
+                        <p>
+                            Bisa digunakan untuk HTML, CSS, pemrograman
+                            dasar, serta pengembangan website sederhana.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>03. Multitasking</h3>
+                        <p>
+                            Dapat menjalankan beberapa aplikasi
+                            sekaligus sesuai kapasitas RAM dan
+                            kondisi perangkat.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>04. Produktivitas</h3>
+                        <p>
+                            Membantu pekerjaan dokumen, spreadsheet,
+                            browsing, dan komunikasi digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kekurangan">
+            <div class="content">
+                <div class="section-title">
+                    <h2>Kekurangan Laptop</h2>
+                    <p>Hal yang perlu diperhatikan</p>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Grafis Terintegrasi</h3>
+                        <p>
+                            Kurang ideal untuk game modern berat,
+                            rendering 3D, dan pekerjaan grafis yang
+                            membutuhkan GPU khusus.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Performa Generasi Lama</h3>
+                        <p>
+                            Prosesor Ryzen 5 3500U merupakan platform
+                            generasi lama, sehingga performanya perlu
+                            dibandingkan dengan laptop terbaru.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Varian Berbeda</h3>
+                        <p>
+                            Kapasitas RAM, SSD, layar, dan sistem operasi
+                            dapat berbeda berdasarkan paket penjualan.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Game Berat</h3>
+                        <p>
+                            Game berat mungkin perlu pengaturan grafis
+                            rendah dan belum tentu berjalan dengan
+                            lancar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="harga">
+            <div class="content">
+                <div class="section-title">
+                    <h2>Harga Laptop</h2>
+                    <p>Periksa harga berdasarkan varian</p>
+                </div>
+
+                <div class="card">
+                    <h3>Axioo MyBook Hype 5 AMD X3</h3>
+
+                    <p class="price">
+                        Cek harga terbaru
+                    </p>
+
+                    <p>
+                        Harga laptop dapat berubah karena konfigurasi,
+                        kondisi barang, promo, garansi, dan penjual.
+                        Pastikan kamu membandingkan harga dari toko
+                        terpercaya sebelum membeli.
+                    </p>
+
+                    <br>
+
+                    <a
+                        class="button"
+                        href="https://www.axiooworld.com/product/hype-5-amd-x3/specifications"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Lihat Situs Resmi
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="model" class="models">
+            <div class="content">
+                <div class="section-title">
+                    <h2>Model Axioo Lainnya</h2>
+                    <p>Alternatif yang bisa dibandingkan</p>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Axioo Hype 1</h3>
+                        <p>
+                            Pilihan untuk kebutuhan dasar seperti
+                            mengetik, browsing, dan belajar online.
+                        </p>
+                        <a href="https://www.axiooworld.com/">
+                            Lihat Axioo
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Axioo MyBook Hype 5-2</h3>
+                        <p>
+                            Seri berbeda yang memiliki konfigurasi
+                            tersendiri. Bandingkan prosesor, RAM,
+                            penyimpanan, dan harganya.
+                        </p>
+                        <a href="https://www.axiooworld.com/">
+                            Lihat Axioo
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Axioo MyBook Hype 5 G12</h3>
+                        <p>
+                            Alternatif dari lini Hype dengan konfigurasi
+                            prosesor Intel pada varian tertentu.
+                        </p>
+                        <a href="https://www.axiooworld.com/">
+                            Lihat Axioo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="content">
+                <div class="section-title">
+                    <h2>Pertanyaan Umum</h2>
+                    <p>Jawaban singkat tentang laptop</p>
+                </div>
+
+                <details>
+                    <summary>Apakah cocok untuk mahasiswa Sistem Informasi?</summary>
+                    <p>
+                        Cocok untuk tugas kuliah, mengetik, membuat
+                        website sederhana, dan coding dasar, selama
+                        spesifikasi unit memenuhi kebutuhan aplikasi.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Apakah bisa digunakan untuk bermain game?</summary>
+                    <p>
+                        Bisa untuk sejumlah game ringan, tetapi
+                        kemampuan bergantung pada game, RAM, dan
+                        pengaturan grafis.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Apakah RAM bisa di-upgrade?</summary>
+                    <p>
+                        Periksa spesifikasi resmi untuk varian yang
+                        tepat atau tanyakan kepada layanan resmi
+                        sebelum membeli modul RAM.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Apakah sudah termasuk Windows?</summary>
+                    <p>
+                        Tergantung paket penjualan. Periksa apakah unit
+                        menggunakan Windows berlisensi atau DOS.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Apakah harga di website ini pasti?</summary>
+                    <p>
+                        Tidak. Harga harus dicek kembali karena
+                        penjual, promo, dan konfigurasi dapat berbeda.
+                    </p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>AXIOO.INFO</h3>
+
+        <p>
+            Website informasi laptop untuk kebutuhan belajar
+            dan produktivitas.
+        </p>
+
+        <p>
+            <a
+                href="https://www.axiooworld.com/"
+                target="_blank"
+                rel="noopener"
+            >
+                Situs Resmi Axioo
+            </a>
+        </p>
+
+        <p>&copy; 2026 AXIOO.INFO</p>
+    </footer>
+
+</body>
+</html>
